@@ -1,0 +1,25 @@
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 10rem;
+    height: 10rem;
+    border: none;
+}
+
+.one{
+    background-color: green;
+}
+
+.two{
+    background-color: blue;
+}
+
+.three{
+    background-color: red;
+}
