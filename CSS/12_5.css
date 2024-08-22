@@ -1,0 +1,48 @@
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+img{
+    width: 20rem;
+    height: 10rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+p{
+    max-width: 40rem;
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+
+[data-tooltip]{
+    position: relative;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    border: solid red 0.1rem;
+    padding: 0.2rem;
+    position: absolute;
+    visibility: hidden;
+}
+
+[data-tooltip]:hover::before{
+    visibility: visible;
+    width: max-content;
+    max-width: 15rem;
+    bottom:1rem;
+}
