@@ -1,0 +1,55 @@
+.cool-border {
+    width: 20rem; 
+    height: 20rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .cool-border::before,
+  .cool-border::after,
+  .cool-border p::before,
+  .cool-border p::after{
+    content: '';
+    position: absolute;
+    width: 2rem; 
+    height: 2rem; 
+    border: 0.2rem solid red;
+  }
+  
+  .cool-border::before {
+      top: 5rem;
+      left: 3rem;
+      border-right: none;
+      border-bottom: none;
+  }
+  
+  .cool-border::after {
+      bottom: 5rem;
+      right: 3rem;
+      border-left: none;
+      border-top: none;
+  }
+
+  .cool-border p::before{
+    top: 5rem;
+    right: 3rem;
+    border-bottom: none;
+    border-left: none;
+
+  }
+
+  .cool-border p::after{
+    bottom: 5rem;
+    left: 3rem;
+    border-right: none;
+    border-top: none;
+
+  }
+
+
+
