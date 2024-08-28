@@ -1,0 +1,41 @@
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  li a::after, li a::before {
+    content: "";
+    position: absolute;
+    border-top: 0.1rem solid black; 
+    transition: width 0.5s ease-in-out;
+    width: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+  }
+
+  li a::after {
+    top: 0;
+    left: 0;
+  }
+  
+  li a::before {
+    bottom: 0;
+    right: 0;
+  }
+
+  li a:hover::after ,li a:hover::before {
+    width: 100%;
+  }
+  
