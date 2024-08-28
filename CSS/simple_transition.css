@@ -1,0 +1,22 @@
+.box{
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+    overflow: hidden;              
+    position: relative;
+}
+
+.box::after{
+    content: "";
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background-color: lightblue;     
+    left: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.box:hover::after{
+    left: 0;
+}
+
